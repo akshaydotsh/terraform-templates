@@ -1,0 +1,20 @@
+[
+  {
+    "name": "${container_name}",
+    "image": "${image_url}",
+    "portMappings": [
+      {
+        "containerPort": ${container_port},
+        "hostPort": ${host_port}
+    }
+    ],
+    "logConfiguration": {
+      "logDriver": "awslogs",
+      "options": {
+        "awslogs-group": "${awslogs_group_name}",
+        "awslogs-region": "${awslogs_region}",
+        "awslogs-stream-prefix": "ecs"
+      }
+    }
+  }
+]

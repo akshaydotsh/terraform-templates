@@ -1,0 +1,11 @@
+variable "vpc_id" {}
+variable "app_port" {}
+variable "private_subnets" {}
+variable "private_sg" {}
+variable "public_subnets" {}
+variable "public_sg" {}
+variable "fargate_cpu" {}
+variable "fargate_memory" {}
+variable "image_url" {}
+variable "container_name" {}
+variable "desired_count" {}
