@@ -1,30 +1,19 @@
-variable "region" {
-    default = "ap-south-1"
-}
+variable "region" {}
 
-variable "vpc_name" {
-    default = "custom-vpc"
-}
+variable "profile" {}
 
-variable "vpc_cidr" {
-    default = "10.0.0.0/16"
-}
+variable "vpc_name" {}
+
+variable "vpc_cidr" {}
 
 variable "public_cidrs" {
-    type = "list"
+    type = list(string)
 }
 
 variable "private_cidrs" {
-    type = "list"
+    type = list(string)
 }
 
-variable "accessip" {
-    default = "0.0.0.0/0"
-}
+variable "ipv4_everywhere" {}
 
-variable "availability_zones_ap_south_1" {
-    default = {
-        "0" = "ap-south-1a",
-        "1" = "ap-south-1b"
-    }
-}
+variable "availability_zones_ap_south_1" {}
