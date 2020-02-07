@@ -15,6 +15,7 @@ That's it! You can get your infrastructure up and running now.
 
 ### Example
 ```bash
+$ mv AWS/fargate/example.terraform.tfvars AWS/fargate/terraform.tfvars
 $ make fargate
 $ make destroy-fargate
 ```
